@@ -3,183 +3,181 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Ulrich Evrard LOKONON</title>
+<title>Gbèna Ulrich Evrard LOKONON</title>
+
+<!-- GOOGLE FONTS -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 
 <style>
-
 body{
-margin:0;
-font-family: 'Segoe UI', sans-serif;
-background:#020617;
-color:#e2e8f0;
+    margin:0;
+    font-family: 'Inter', sans-serif;
+    background:#020617;
+    color:#e2e8f0;
+    scroll-behavior: smooth;
 }
+
+a{color:#38bdf8; text-decoration:none;}
 
 /* HEADER */
 header{
-padding:80px 20px;
-text-align:center;
-background:linear-gradient(120deg,#020617,#0f172a);
+    padding:80px 20px;
+    text-align:center;
+    background:linear-gradient(120deg,#020617,#0f172a);
+    position: relative;
+    overflow: hidden;
 }
 
 header h1{
-font-size:48px;
-margin-bottom:10px;
+    font-size:50px;
+    margin-bottom:10px;
+    animation: fadeInDown 1s ease;
 }
 
 header p{
-font-size:18px;
-color:#94a3b8;
+    font-size:20px;
+    color:#94a3b8;
+    animation: fadeIn 2s ease;
+}
+
+/* ANIMATIONS */
+@keyframes fadeInDown{
+    from {opacity:0; transform: translateY(-50px);}
+    to {opacity:1; transform: translateY(0);}
+}
+@keyframes fadeIn{
+    from {opacity:0;}
+    to {opacity:1;}
 }
 
 /* SECTIONS */
 section{
-max-width:1100px;
-margin:auto;
-padding:60px 20px;
+    max-width:1100px;
+    margin:auto;
+    padding:60px 20px;
 }
 
 h2{
-border-left:4px solid #38bdf8;
-padding-left:10px;
+    border-left:4px solid #38bdf8;
+    padding-left:10px;
+    font-size:28px;
+    margin-bottom:20px;
 }
 
 /* GRID */
 .grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
-gap:20px;
-margin-top:20px;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:20px;
+    margin-top:20px;
 }
 
 .card{
-background:#0f172a;
-padding:25px;
-border-radius:15px;
-transition:0.3s;
+    background:#0f172a;
+    padding:25px;
+    border-radius:15px;
+    transition:0.3s;
+    box-shadow: 0 0 15px rgba(56,189,248,0.2);
 }
-
 .card:hover{
-transform:translateY(-5px);
-background:#111827;
-}
-
-/* LINKS */
-a{
-color:#38bdf8;
-text-decoration:none;
-}
-
-/* TIMELINE */
-.timeline{
-border-left:2px solid #38bdf8;
-padding-left:20px;
-margin-top:20px;
-}
-
-.timeline div{
-margin-bottom:20px;
+    transform:translateY(-7px);
+    background:#111827;
 }
 
 /* FOOTER */
 footer{
-text-align:center;
-padding:40px;
-background:#020617;
-color:#64748b;
+    text-align:center;
+    padding:40px;
+    background:#020617;
+    color:#64748b;
 }
 
+/* SMALLER CARDS */
+.card h3{
+    margin-top:0;
+    margin-bottom:10px;
+}
+.card p{
+    margin:0;
+}
 </style>
-
 </head>
 
 <body>
 
 <header>
 <h1>🧬 Gbèna Ulrich Evrard LOKONON</h1>
-<p>Biochemist • Genomics • AI • Infectious Disease Intelligence</p>
-<p>Building next-generation platforms for infectious disease surveillance in Africa</p>
+<p>Interface Biologie Moléculaire • Bioinformatique • Data Science</p>
+<p>Résolution des problèmes de santé publique par l'analyse scientifique et les données</p>
 </header>
 
 <section>
-<h2>🌍 Scientific Vision</h2>
+<h2>🌍 Vision Scientifique</h2>
 <p>
-I am developing an integrated system combining genomics, artificial intelligence, clinical data, 
-and vector surveillance to transform infectious disease monitoring and prediction in Africa.
+Je travaille à l'interface de la biologie moléculaire, de la bioinformatique et de la science des données pour résoudre des problématiques de santé publique, avec un focus sur les maladies infectieuses et la surveillance épidémiologique.
 </p>
 </section>
 
 <section>
-<h2>🧠 Core Platforms</h2>
-
+<h2>🧠 Projets Réalisés</h2>
 <div class="grid">
-<!--
+
 <div class="card">
-<h3>🧬 VectorMut</h3>
-<p>Viral mutation tracking and evolutionary genomics platform.</p>
-<a href="https://github.com/gbena-ulrich-evrard-lokonon/VectorMut">Explore →</a>
+<h3>🧬 HPV-HR</h3>
+<p>Analyse et suivi des infections à papillomavirus à haut risque pour la recherche et la santé publique.</p>
+<a href="https://github.com/gbena-ulrich-evrard-lokonon/HPV-HR">Voir le projet →</a>
 </div>
--->
+
+<div class="card">
+<h3>🧪 ReactTrack</h3>
+<p>Système intelligent de gestion et suivi des réactifs de laboratoire pour l’optimisation des processus scientifiques.</p>
+<a href="https://github.com/gbena-ulrich-evrard-lokonon/ReactTrack">Voir le projet →</a>
+</div>
+
 <div class="card">
 <h3>🧒 Kidriva</h3>
-<p>Digital clinical monitoring system for sickle cell disease.</p>
-<a href="https://github.com/gbena-ulrich-evrard-lokonon/Kidriva.ue">Explore →</a>
-</div>
-<!--
-<div class="card">
-<h3>🦟 Arbovirus Surveillance</h3>
-<p>AI-powered monitoring of vector-borne diseases and transmission dynamics.</p>
-<a href="https://github.com/gbena-ulrich-evrard-lokonon">Explore →</a>
-</div>
--->
+<p>Plateforme numérique de suivi clinique pour la prise en charge des enfants atteints de drépanocytose.</p>
+<a href="https://github.com/gbena-ulrich-evrard-lokonon/Kidriva.ue">Voir le projet →</a>
 </div>
 
+</div>
 </section>
 
 <section>
-<h2>🔬 Research Focus</h2>
+<h2>🔬 Domaines d’Expertise</h2>
+<div class="grid">
+<div class="card">Biologie Moléculaire</div>
+<div class="card">Bioinformatique</div>
+<div class="card">Data Science pour la Santé Publique</div>
+<div class="card">Analyse de Données Cliniques</div>
+<div class="card">Surveillance des Maladies Infectieuses</div>
+</div>
+</section>
+
+<section>
+<h2>🧬 Travaux Antérieurs : Métatranscriptome et Résistance</h2>
+<p>
+Exploration du métatranscriptome (virome et microbiome) chez <em>Anopheles gambiae</em> exposées aux insecticides (deltaméthrine, alphacyperméthrine et autres) dans deux localités du Bénin, et étude des mécanismes de résistance associés.
+</p>
 
 <div class="grid">
-<div class="card">Viral Genomics</div>
-<div class="card">Metagenomics and Transcriptomics</div>
-<div class="card">Mutation Dynamics</div>
-<div class="card">Arbovirus Transmission</div>
-<div class="card">AI for Global Health</div>
-<div class="card">Bioinformatics</div>
+<div class="card">Virome & Microbiome Analysis</div>
+<div class="card">Exposition aux insecticides</div>
+<div class="card">Résistance des vecteurs</div>
+<div class="card">Comparaison entre localités</div>
 </div>
-
 </section>
 
-<section>
-<h2>🧪 Technology Stack</h2>
-<p>Python • Bash • R • Machine Learning • Bioinformatics • Data Science • Streamlit</p>
-</section>
-
-<section>
-<h2>📈 Scientific Roadmap</h2>
-
-<div class="timeline">
-
-<div>
-<strong>2026</strong> – Integration of genomics + AI platforms (VectorMut, Kidriva)  
-</div>
-
-<div>
-<strong>2027</strong> – Predictive infectious disease intelligence system  
-</div>
-
-</div>
-
-</section>
 
 <section>
 <h2>🤝 Collaboration</h2>
 <p>
-Open to research collaborations, PhD opportunities, and global health innovation partnerships.
+Ouvert aux collaborations de recherche, opportunités de PhD et projets internationaux en santé publique et sciences des données.
 </p>
 </section>
 
 <footer>
-© 2026 Gbèna Ulrich Evrard LOKONON • Benin
+© 2026 Gbèna Ulrich Evrard LOKONON • Bénin
 </footer>
 
 </body>
